@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  labels:
+    app: hello-world
+  name: hello-world-ingress
+spec:
+  rules:
+    - host: 00240825-36c4-4929-8026-7def9c38f34a.k8s.civo.com
+      http:
+        paths:
+          -
+            backend:
+              service:
+                name: hello-world
+                port:
+                  number: 5000
+            path: /
+            pathType: "Prefix"
