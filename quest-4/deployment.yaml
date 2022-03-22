@@ -15,3 +15,9 @@ spec:
       containers:
         - image: civo/docker-hello-world:latest
           name: hello-world
+          resources:
+              limits:
+                memory: 128Mi
+                cpu: 0.5
+              requests:
+                memory: 128Mi
