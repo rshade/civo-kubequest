@@ -6,7 +6,7 @@ metadata:
     app: hello-world
 spec:
   ports:
-    - name: "hello-world"
+    - name: hello-world
       port: 5000
   selector:
     app: hello-world

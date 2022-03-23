@@ -1,0 +1,3 @@
+name: kube-cluster
+runtime: python
+description: A minimal Civo Python Pulumi program
